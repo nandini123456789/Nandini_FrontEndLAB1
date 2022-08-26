@@ -1,0 +1,102 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    margin: auto;
+    width: 30%;
+    height: 500px;
+    background: #292929;
+    border-radius: 10px ;
+    color: #ffffff;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .column{
+    position: absolute;
+    width: 13%;
+    height: 370px;
+    top: 10%;
+
+}
+.first{
+    left: 20%;
+}
+.second{
+    left: 44%;
+}
+.third{
+    right: 20%;
+}
+.container .column .bar{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background: #ffffff;
+}
+
+.container .column .bar .inner_bar{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+
+.container .column .bar .bar1{
+    animation: bar1 1s linear ;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes bar1{
+    form{height: 0;}
+    to{height: 30%;}
+}
+ 
+
+.container .column .bar .bar2{
+    animation: bar2 1s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+}
+
+@keyframes bar2{
+    form{height: 0;}
+    to{height: 40%;}
+}
+
+.container .column .bar .bar3{
+    animation: bar3 1s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    
+}
+
+@keyframes bar3{
+    form{height: 0;}
+    to{height: 90%;}
+}
+ 
+.container .column .text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+
+}
+.bar_plot{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
